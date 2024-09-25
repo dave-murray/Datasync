@@ -10,7 +10,7 @@ using TodoApp.MAUI.Services;
 
 namespace TodoApp.MAUI.ViewModels;
 
-public class MainViewModel(AppDbContext context, IAlertService alertService) : ObservableRecipient
+public partial class MainViewModel(AppDbContext context, IAlertService alertService) : ObservableRecipient
 {
     [ObservableProperty]
     private bool _isRefreshing = false;
