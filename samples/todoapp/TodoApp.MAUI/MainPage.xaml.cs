@@ -21,7 +21,7 @@ public partial class MainPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        this._viewModel.RefreshItemsCommand.Execute();
+        this._viewModel.RefreshItemsCommand.Execute(null);
     }
 
     public void OnListItemTapped(object sender, ItemTappedEventArgs e)
